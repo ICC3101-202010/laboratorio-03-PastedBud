@@ -58,7 +58,7 @@ namespace Lab3CarloVitali
         public void ChangeJobs(Workers Worker, string job)
         {
             Worker.Job = job;
-            if (job == "Auxiliar")
+            if (job == "Cleaner")
             {
                 Worker.Salary = 318000;
             }
@@ -68,7 +68,7 @@ namespace Lab3CarloVitali
                 Worker.Salary = 600000;
             }
 
-            else if(job == "Jefe")
+            else if(job == "Boss")
             {
                 Worker.Salary = 3000000;
             }
