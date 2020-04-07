@@ -27,7 +27,7 @@ namespace Lab3CarloVitali
             Lastname = lastname;
             Nacionalidad = nacionalidad;
             FechaNacimiento = fecha_nacimiento;
-            this.Saldo_Disponible = rnd.Next(3000000, 10000000);
+            this.Saldo_Disponible = rnd.Next(0, 500000);
         }
 
     }
@@ -77,7 +77,7 @@ namespace Lab3CarloVitali
             {
                 Worker.Salary = 1500000;
             }
-            
+            Console.WriteLine("El puesto ha sido cambiado con exito a " + job + "con un nuevo sueldo de " + Worker.Salary);
         }
 
     }
@@ -106,7 +106,7 @@ namespace Lab3CarloVitali
         public static void Main(string[] args)
         {
             DateTime date1 = new DateTime(2008, 6, 1, 7, 47, 0);
-            Console.WriteLine(date1.ToString());
+            //Console.WriteLine(date1.ToString());
         }
     }
 }
