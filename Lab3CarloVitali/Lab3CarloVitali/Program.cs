@@ -176,6 +176,42 @@ namespace Lab3CarloVitali
     {
         public static void Main(string[] args)
         {
+            List<Clients> Lista_Clientes = new List<Clients>();
+            List<Workers> Lista_Trabajadores = new List<Workers>();
+            List<Product> Lista_Productos = new List<Product>();
+            List<Registro> Lista_Registro = new List<Registro>();
+
+           
+            Console.WriteLine("Desea agregar productos? (Si/No) ");
+            if (Console.ReadLine() == "Si")
+            {
+                Console.WriteLine("Inserte Nombre: ");
+                
+                Console.WriteLine("Inserte Marca: ");
+
+                Console.WriteLine("Inserte Precio: ");
+
+            }
+            else
+            {
+                Console.WriteLine("Desea agregar Clientes? (Si/No) ");
+                if (Console.ReadLine() == "Si")
+                {
+                    Console.WriteLine("Inserte Nombre: ");
+                    Console.WriteLine("Inserte Apellido: ");
+                    Console.WriteLine("Inserte Saldo: ");
+                }
+                else
+                {
+                    Console.WriteLine("Desea agregar Trabajadores? (Si/No) ");
+                    if (Console.ReadLine() == "Si")
+                    {
+                        Console.WriteLine("Inserte Nombre: ");
+                        Console.WriteLine("Inserte Apellido: ");
+                        Console.WriteLine("Inserte Puesto: ");
+                    }
+                }
+            }
             
         }
     }
